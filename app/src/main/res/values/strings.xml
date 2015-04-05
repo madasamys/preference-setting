@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Peference-setting</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Android Preferences Tutorial and Sample Code</string>
+    <string name="prefs_text1">Standard Preferences</string>
+    <string name="prefs_text2">Preferences with value displayed as summary</string>
+    <string name="prefs_text3">Custom Preferences without extending PreferenceActivity</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="My list of Preferences">
+        <CheckBoxPreference android:title="Checkbox Preference"
+                            android:defaultValue="false" android:summary="This preference can be true or false"
+                            android:key="checkboxPref" />
+        <ListPreference android:title="Your favorite Pet"
+                        android:summary="This preference allows to select an item in a array"
+                        android:key="listPref" android:defaultValue="digiGreen"
+                        android:entries="@array/listArray" android:entryValues="@array/listValues" />
+        <EditTextPreference android:name="EditText Preference"
+                            android:summary="This allows you to enter a string"
+                            android:defaultValue="Nothing" android:title="Edit This Text"
+                            android:key="editTextPref" />
+        <RingtonePreference android:name="Ringtone Preference"
+                            android:summary="Select a ringtone" android:title="Ringtones"
+                            android:key="ringtonePref" />
+        <PreferenceScreen android:key="SecondPrefScreen"
+                          android:title="Secondary Level" android:summary="This is a sub PreferenceScreen">
+            <intent android:action="android.intent.action.VIEW"
+                    android:targetPackage="com.as400samplecode" android:targetClass="com.as400samplecode.Preferences2" />
+        </PreferenceScreen>
+        <Preference android:title="Custom Preference"
+                    android:summary="This works almost like a button" android:key="customPref" />
+    </PreferenceCategory>
+</PreferenceScreen>
