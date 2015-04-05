@@ -48,7 +48,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/preferences2"
+        android:layout_below="@+id/preferences3"
         android:text="tabPreference"/>
 
 </RelativeLayout>
