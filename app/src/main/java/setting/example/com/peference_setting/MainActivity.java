@@ -48,6 +48,18 @@ public class MainActivity extends ActionBarActivity
             }
         });
 
+        Button preferencesButton4 = (Button) findViewById(R.id.tabpreference);
+        preferencesButton4.setOnClickListener(new View.OnClickListener()
+        {
+
+            public void onClick(View v)
+            {
+                Intent settingsActivity = new Intent(getBaseContext(),
+                        TabBar.class);
+                startActivity(settingsActivity);
+            }
+        });
+
 
     }
 
